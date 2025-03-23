@@ -1,4 +1,4 @@
-//import java.util.Arrays;
+package dsa;//import java.util.Arrays;
 
 public class binarySearch {
 
@@ -12,7 +12,7 @@ public class binarySearch {
         //If target is not present in the array then it provides the possible insertion index: -(insertion index)-1
         //if target is 11 then it needs to be between 10,12 so -(5)-1= -6
 
-        //int indx= Arrays.binarySearch(arr,target);
+        //int indx= Arrays.dsa.binarySearch(arr,target);
 
         //Iterative approach
         int indx= binarySearch(arr, target);
