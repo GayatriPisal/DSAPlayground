@@ -1,6 +1,7 @@
 package leetcode;
 
 import java.util.Arrays;
+import java.util.LinkedList;
 
 public class twoPointersContainerWithMostWater {
 
@@ -11,6 +12,8 @@ public class twoPointersContainerWithMostWater {
         int maxWater = maxWater(height);
 
         System.out.println("Max water: "+maxWater);
+
+        LinkedList<String> ll = new LinkedList<>();
     }
 
     public static int maxWater(int[] height)
