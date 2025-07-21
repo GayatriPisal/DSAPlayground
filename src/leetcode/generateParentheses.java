@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class generateParanthesis {
+public class generateParentheses {
 
     public static void main(String args[])
     {
@@ -13,10 +13,10 @@ public class generateParanthesis {
 
         int n = scanner.nextInt();
 
-        System.out.println(generateParenthesis(n));
+        System.out.println(generateParentheses(n));
     }
 
-    public static List<String> generateParenthesis(int n) {
+    public static List<String> generateParentheses(int n) {
 
         List<String> res= new ArrayList<>();
         recursiveFunctn(res,0,0,"",n);
