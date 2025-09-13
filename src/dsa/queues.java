@@ -1,7 +1,9 @@
 package dsa;
 
 
+import java.util.Collections;
 import java.util.LinkedList;
+import java.util.PriorityQueue;
 import java.util.Queue;
 
 
@@ -38,6 +40,34 @@ public class queues {
         System.out.println("Is Lucy in queue? - "+ q.contains("Lucy"));
         System.out.println("Is Max in queue? - "+ q.contains("Max"));
 
+        /***** Priority Queue  ******/
+
+        Queue<String> pq = new PriorityQueue<>();
+
+        pq.offer("D");
+        pq.offer("A");
+        pq.offer("C");
+        pq.offer("B");
+
+        System.out.println("Priority queue: "+pq);
+
+        pq.poll();
+
+        System.out.println("Peek : "+pq.peek());
+
+        System.out.println("Priority queue size : "+pq.size());
+
+        System.out.println("Contains B? : "+ pq.contains("B"));
+
+
+        //Reverse order
+        Queue<String> revPQ = new PriorityQueue<>(Collections.reverseOrder());
+        revPQ.offer("D");
+        revPQ.offer("A");
+        revPQ.offer("C");
+        revPQ.offer("B");
+
+        System.out.println("Reverse Priority queue: "+revPQ);
 
         //Uses of Queue:
         // used in LinkedList, Priority queue, BFS
