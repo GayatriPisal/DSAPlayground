@@ -7,6 +7,8 @@ public class stacks {
 
     public static void main(String[] args) {
 
+        // Stack is a LIFO structure - last in first out
+        // Stores objects in vertical tower like structure
         Stack<String> stk = new Stack<>();
 
         stk.push("Lucy");
@@ -30,5 +32,12 @@ public class stacks {
         //returns position of element in stack from top. starting with index=1
         //if element not found, returns -1
         System.out.println("Position of Lucy in stack - "+ stk.search("Lucy"));
+
+
+        //Uses of stack:
+        // undo/redo feature in text
+        // backtracking in algorithms
+        // moving back or forward in browser history
+        // calling functions
     }
 }
