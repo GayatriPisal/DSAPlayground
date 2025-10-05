@@ -1,10 +1,10 @@
 package leetcode;
 
-import java.util.HashSet;
 import java.util.Stack;
 
 public class stringDecode {
 
+    //Arrays and Stack
     public static void main(String args[])
     {
         String s= "3[a]2[bc]";
